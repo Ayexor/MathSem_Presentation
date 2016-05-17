@@ -1,0 +1,82 @@
+\documentclass{beamer}
+\mode<presentation> {
+	\usetheme{Hannover}
+}
+\usecolortheme{default}
+
+\usepackage{amsmath,amssymb}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage[T1]{fontenc}
+\usepackage{siunitx}
+\usepackage{lmodern}
+
+\beamertemplatenavigationsymbolsempty
+
+\author{Stefan Kull, Roy Seitz}
+\title{Besselfunktion - Wo ist die zweite Lösung?}
+
+\newenvironment{slide}
+{\begin{frame}[environment=slide]
+	\frametitle{\insertsection}
+	\framesubtitle{\insertsubsection}}
+{\end{frame}}
+
+
+\begin{document}
+	
+	\begin{frame}
+		\titlepage
+	\end{frame}
+	
+	\begin{frame}
+		\tableofcontents
+	\end{frame}
+	
+\section{Bekannt}	
+\subsection{Bessel'sche Differentialgleichung}	
+	\begin{slide}
+		Lösungen der Differentialgleichung
+		$$ z^2\ddot{w}+z\dot{w}+(z^2-\nu^2)w=0 $$
+		in folgender Form
+		$$
+		w(z)=J_\nu(z)=z^\varrho\sum_{k=0}^{\infty}a_kz^k 
+		$$
+	\end{slide}
+	
+\subsection{Indexgleichung und $\varrho$}
+	\begin{slide}
+		Indexgleichung
+		$$\varrho(\varrho-1)+p_0\varrho+q_0=0$$
+		Für die Besselgleichung:
+		$$p_0=1, q_0=-\nu^2$$
+		$$\varrho=\pm\nu $$
+	\end{slide}
+
+\section{Problem}
+\subsection{Lineare Abhängigkeit und doppelte $\varrho$}
+	\begin{slide}
+		Lineare Abhängigkeit bei ganzzahligen $\nu\in\mathbb{Z}\setminus\{0\}$:
+		$$J_\nu(z) = J_{-\nu}(-z)$$
+		Bei $\nu=0$ nur eine Lösung
+		$$\varrho=\pm 0\Rightarrow J_0(z)$$
+	\end{slide}
+	
+\subsection{Wo ist die 2. Lösung?}
+	\begin{slide}		
+		DGL 2. Ordnung $\Rightarrow$ 2 Lösungen.
+		
+		Wie findet man die zweite Lösung?
+		
+	\end{slide}
+	
+\section{Benötigte Werkzeuge}
+	\begin{slide}
+		\begin{itemize}
+			\item Analytische Fortsetzung
+			\item Laurent-Reihe $$f(z)=\sum_{k=-\infty}^{\infty}a_kz^k $$
+			\item Etwas Mathemagie\ldots
+		\end{itemize}
+	\end{slide}
+	
+\end{document}
