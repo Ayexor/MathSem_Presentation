@@ -10,24 +10,36 @@
 	
 \maketitle{}
 
+\huge
 
-\begin{tabular}{|c| c |c|}
+\begin{tabular}{|l|l|}
 	\hline
-	A & Diagonalform & Jordan-Normalform\\
+	$w^+=\begin{pmatrix}
+	a_{11} & a_{12} \\ a_{21} & a_{22}
+	\end{pmatrix}$ w&
+	$\begin{matrix}
+		w_1^{+}&=&a_{11}w_1&+&a_{12}w_2\\			w_2^{+}&=&a_{21}w_1&+&a_{22}w_2
+	\end{matrix}$ \\ 
+	
 	\hline
-	$\begin{pmatrix}
-		a_{11} & a_{12} \\ a_{21} & a_{22}
-	\end{pmatrix}$ & 
-	$\begin{pmatrix}
+	$w^+=\begin{pmatrix}
 		\lambda_1 & 0 \\ 0 & \lambda_2
-	\end{pmatrix}$ & 
-		$\begin{pmatrix}
-			\lambda & 0 \\ 1 & \lambda
-		\end{pmatrix}$ \\
+	\end{pmatrix}w $&
+	
+	$\begin{matrix}
+		w_1^{+}&=&\lambda_1w_1&\\
+		w_2^{+}&=&&&\lambda_2w_2
+	\end{matrix}$ \\
+	
+	\hline	 
+	$w^+=\begin{pmatrix}
+	\lambda & 0 \\ 1 & \lambda
+	\end{pmatrix}w$&
+	
+	$\begin{matrix}
+		w_1^{+}&=&\lambda_1w_1&\\
+		w_2^{+}&=&w_1&+&\lambda_2w_2
+	\end{matrix}$\\
 	\hline
-	\[\begin{split}
-		w_1^+ =a_{11}w_1 + a_{12}w_2 
-	\end{split}\]
 \end{tabular}
-
 \end{document}
