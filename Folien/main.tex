@@ -10,6 +10,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{siunitx}
 \usepackage{lmodern}
+\usepackage{graphicx}
 
 \beamertemplatenavigationsymbolsempty
 
@@ -65,7 +66,7 @@
 \subsection{Wo ist die 2. Lösung?}
 	\begin{slide}		
 		DGL 2. Ordnung $\Rightarrow$ 2 Lösungen.
-		$2<3$
+		
 		Wie findet man die zweite Lösung?
 		
 	\end{slide}
@@ -79,4 +80,18 @@
 		\end{itemize}
 	\end{slide}
 	
+\section{Ziel}
+\subsection{Besselfunktion 1. Art}
+	\begin{slide}
+		\centering
+		$$J_\nu(x)=x^\varrho\sum_{k=0}^{\infty}a_kx^k$$
+		\includegraphics[scale=0.5]{Bilder/Bessel_Functions_1st_Kind.pdf}
+	\end{slide}
+\subsection{Besselfunktion 2. Art}
+	\begin{slide}
+		\centering
+		$$Y_\nu(x)=x^\varrho\sum_{k=-\infty}^{\infty}a_kx^k+aJ_\nu(x)\log(x)$$
+		\includegraphics[scale=0.5]{Bilder/Bessel_Functions_2nd_Kind.pdf}
+	\end{slide}
+
 \end{document}
