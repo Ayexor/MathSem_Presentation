@@ -11,6 +11,7 @@
 \usepackage{siunitx}
 \usepackage{lmodern}
 \usepackage{graphicx}
+\usepackage{subfigure}
 
 \beamertemplatenavigationsymbolsempty
 
@@ -26,13 +27,13 @@
 
 \begin{document}
 	
-	\begin{frame}
+	\begin{slide}
 		\titlepage
-	\end{frame}
+	\end{slide}
 	
-	\begin{frame}
+	\begin{slide}
 		\tableofcontents
-	\end{frame}
+	\end{slide}
 	
 \section{Bekannt}	
 \subsection{Bessel'sche Differentialgleichung}	
@@ -75,7 +76,7 @@
 	\begin{slide}
 		\begin{itemize}
 			\item Analytische Fortsetzung
-			\item Laurent-Reihe $$f(z)=\sum_{k=-\infty}^{\infty}a_kz^k $$
+			\item Laurent-Reihe $$\mathcal{L}(z)=\sum_{k=-\infty}^{\infty}a_kz^k $$
 			\item Etwas Mathemagie\ldots
 		\end{itemize}
 	\end{slide}
@@ -94,4 +95,12 @@
 		\includegraphics[scale=0.5]{Bilder/Bessel_Functions_2nd_Kind.pdf}
 	\end{slide}
 
+	\begin{slide}
+		$$J_\nu(x)=x^\varrho\sum_{k=0}^{\infty}a_kx^k$$
+		$$Y_\nu(x)=x^\varrho\sum_{k=-\infty}^{\infty}a_kx^k+aJ_\nu(x)\log(x) $$
+		\begin{figure}
+			\subfigure{\includegraphics[width=0.49\textwidth]{Bilder/Bessel_Functions_1st_Kind.pdf}}
+			\subfigure{\includegraphics[width=0.49\textwidth]{Bilder/Bessel_Functions_2nd_Kind.pdf}}			
+		\end{figure}
+	\end{slide}
 \end{document}
