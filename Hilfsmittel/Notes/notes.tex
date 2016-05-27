@@ -1,0 +1,43 @@
+\documentclass[notes=only]{beamer}
+\setbeamertemplate{note page}[plain]
+
+\begin{document}
+
+\note[itemize]
+%Diagonalisierbar
+{
+	\item Diagonalisierbar $->$
+	\item $w_1^+ = \lambda_1 w_1; w_2^+ = \lambda_2 w_2$
+	\item $\lambda$ kompensieren:
+	\item $\varrho_{1,2} = \frac{1}{2\pi i}log(\lambda_{1,2})$
+	\item $z^{\varrho_{1,2}} = e^{log(z^{\varrho_{1,2}})} = e^{\varrho_{1,2} log(z)}$
+	\item Analytisch Fortsetzen...
+	\item $e^{\varrho_{1,2} log(z)}  \text{@}  e^{\varrho_{1,2} (log(z) + 2\pi i)}
+			= e^{\varrho_{1,2} log(z)}  e^{2\pi i\frac{1}{2\pi i}log(\lambda_{1,2})}
+			= z^{\varrho_{1,2}}  \lambda_{1,2}$
+	\item Verhaeltnis bilden...
+	\item $\frac{w_{1,2}}{z^\varrho_{1,2}} @
+		\frac{\lambda_{1,2}w_{1,2}}{\lambda_{1,2}z^{\varrho_{1,2}}}
+		=\frac{w_{1,2}}{z^{\varrho_{1,2}}} = \mathcal{L}(z)$
+	\item $w_{1,2} = z^{\varrho_{1,2}}\mathcal{L}(z)$
+	\item Schon bekannt, beweis
+	
+}
+\note[itemize]
+%Jordan-Normalform
+{
+	\item nicht diagonalisierbar $->$
+	\item $w_2 = \lambda_2*w_2 + w_1$
+	\item $\frac{w_2}{w_1} @ \frac{\lambda w_2}{\lambda w_1} = \frac{w_2}{2_1}
+		+ \frac{1}{\lambda}$
+	\item $\frac{1}{\lambda}$ kompensieren
+	\item $\frac{1}{2\pi i\lambda} log(z) @\frac{1}{2\pi i\lambda} log(z)
+		 +  \frac{1}{\lambda}$
+	\item Verhaeltnis...
+	\item $\frac{w_2}{w_1} - \frac{1}{2\pi i\lambda} log(z)
+		@ \frac{w_2}{w_1} - \frac{1}{2\pi i\lambda} log(z) = \mathcal{L}(z)$
+	\item Aufloesen...
+	\item $w_2 = \mathcal{L}_1w_1 + aw_1log(z) = z^{\varrho_1}\mathcal{L}_2 + aw_1log(z)$
+	\item $\mathcal{L}\mathcal{L}=\mathcal{L}$
+}
+\end{document}}
